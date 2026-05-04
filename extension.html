@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      button {
+        background: #28a745;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Place Order Request</h2>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="40bf0ad6-3943-4a7e-af48-2373648cd0e7">
+    <label>Name</label>
+    <input type="text" name="name" required />
+
+    <label>Email</label>
+    <input type="email" name="email" required />
+
+    <label>Phone</label>
+    <input type="tel" name="phone" required />
+
+    <label>Select Item</label>
+    <select name="item">
+      <option>Item 1</option>
+      <option>Item 2</option>
+     <option value="item 3">Item 3</option>
+     <option value="item 4">Item 4</option>
+      <option value="item 5">Item 5</option>
+      <option value="item 6">Item 6</option>
+      <option value="item 7">Item 7</option>
+      <option value="item 8">Item 8</option>
+      <option value="item 9">Item 9</option>
+      <option value="item 10">Item 10</option>
+      <option value="item 11">Item 11</option>
+      <option value="item 12">Item 12</option>
+      <option value="item 13">Item 13</option>
+      <option value="item 14">Item 14</option>
+      <option value="item 15">Item 15</option>
+      <option value="item 16">Item 16</option>
+      <option value="item 17">Item 17</option>
+      <option value="item 18">Item 18</option>
+      <option value="item 19">Item 19</option>
+      <option value="item 20">Item 20</option>
+        
+    </select>
+    <label for="size">size</label>
+    <select name="size" id="size">
+      <option value="37">37</option>
+      <option value="38">38</option>
+      <option value="39">39</option>
+      <option value="40">40</option>
+      <option value="41">41</option>
+      <option value="42">42</option>
+      <option value="43">43</option>
+    </select>
+    <label>Quantity</label>
+    <input type="number" name="quantity" min="1" required />
+
+    <label>Delivery Address</label>
+    <textarea name="address" required></textarea>
+    <label for="requests">requests</label>
+    <textarea name="requests" id="requests"></textarea>
+    <button type="submit">
+      submit
+      <a href="mailto:mogajimuhammed8@gmail.com"></a>
+    </button>
+  </body>
+</html>
